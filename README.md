@@ -16,7 +16,7 @@
 >                name = "fcupadm",
 >                location = "classpath:mapper", //读取 claapath 下 mapper/fcupadm 下的xml文件
 >                scan = FcupUserfoMapper.class,  //mybatis 扫描该类下的所有的文件
->                packages = {"com.fullgoal.msa.fcup.dal.fcupadm.mapper"} //packages 与scan 路径会合并扫描
+>                packages = {"org.cloudfun.msa.fcup.dal.fcupadm.mapper"} //packages 与scan 路径会合并扫描
 >        )
 >        public DruidDataSourceProperties fcupDataSource() {
 >            return new DruidDataSourceProperties();
