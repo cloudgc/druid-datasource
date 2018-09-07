@@ -18,16 +18,16 @@
 >                scan = FcupUserfoMapper.class,  //mybatis 扫描该类下的所有的文件
 >                packages = {"com.fullgoal.msa.fcup.dal.fcupadm.mapper"} //packages 与scan 路径会合并扫描
 >        )
->        public DataSource fcupDataSource() {
->            return new DruidDataSource();
+>        public DruidDataSourceProperties fcupDataSource() {
+>            return new DruidDataSourceProperties();
 >        }
 >    
 >    
 >        @Bean(name = "payadm")
 >        @ConfigurationProperties(prefix = "payadmin.datasource")
 >        @FgDataSource(name = "payadm", scan = PayadmUserMapper.class)
->        public DataSource payDataSource() {
->            return new DruidDataSource();
+>        public DruidDataSourceProperties payDataSource() {
+>            return new DruidDataSourceProperties();
 >        }
 >    
 >    }
